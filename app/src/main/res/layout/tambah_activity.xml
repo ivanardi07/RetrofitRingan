@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Tambah Data Siswa"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="NIM :"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNim"
+        app:layout_constraintStart_toStartOf="@+id/etNama"
+        app:layout_constraintTop_toTopOf="@+id/tvNim" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Nama :"
+        android:textSize="18dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNim" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNama"
+        app:layout_constraintStart_toStartOf="@+id/etAlamat"
+        app:layout_constraintTop_toTopOf="@+id/tvNama" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNama"
+        app:layout_constraintTop_toBottomOf="@+id/tvNama" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/etNama" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupJk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Jenis Kelamin"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="5dp"
+            android:text="laki-laki" />
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="5dp"
+            android:text="perempuan" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvNoTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="No. Telpon: "
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupJk"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupJk" />
+
+    <EditText
+        android:id="@+id/etNoTelp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNoTelp"
+        app:layout_constraintStart_toEndOf="@+id/tvNoTelp"
+        app:layout_constraintTop_toTopOf="@+id/tvNoTelp" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNoTelp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
