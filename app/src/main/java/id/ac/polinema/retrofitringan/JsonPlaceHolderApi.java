@@ -7,6 +7,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Query;
 
 public interface JsonPlaceHolderApi {
@@ -18,4 +19,7 @@ public interface JsonPlaceHolderApi {
 
     @POST("siswa")
     Call<ResponseBody>createPost(@Body Post post);
+
+    @PUT("siswa")
+    Call<ResponseBody>editPost(@Body Post post);
 }
